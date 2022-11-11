@@ -55,7 +55,7 @@ git log
 
 ### restore a file to the most recent commit
 
-We can restore a file to its state at the previous most recent commit using the `git restore <filename>`. You can not undo a git restore command, since your changes were not committed! Think of this command as an ultimate "Ctrl+Z" restoring files to their previous commit. Technically speaking `git restore` will restore the file back to the HEAD, which typically we have pointing to the most recent commit in the branch.
+We can restore a file to its state at the previous most recent commit using the `git restore <filename>`. You can not undo a restore, since your most recent changes were not committed! Think of this command as an ultimate "Ctrl+Z" restoring files to their previous commit. Technically speaking `git restore` will restore the file back to the HEAD, which typically we have pointing to the most recent commit in the branch.
 
 ```powershell
 # make some changes to myfile.txt, save the file
@@ -71,7 +71,7 @@ git restore myfile.txt
 
 ### restore a file to any commit
 
-This actually gives us even more flexibility in our restore procedure, we can restore a file to any commit in the log. We state the number of commits from the HEAD to go back to `git restore --source HEAD~N <filename>`.
+This actually gives us even more flexibility in our restore procedure, we can restore a file to any commit in the log. We state the number of commits from the HEAD to go back to `git restore --source HEAD~N <filename>`. These modifications are not staged yet, so we can always undo such a restore.
 
 ```powershell
 # go back to the state 2 commits prior to the current commit

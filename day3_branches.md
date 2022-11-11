@@ -4,7 +4,7 @@
 
 ### fast-forward merge a simple type of merge, where a new branch is created, but the original branch it stemmed from has no additional commits
 
-![fast-forward merge](https://wac-cdn.atlassian.com/dam/jcr:91aece4a-8fa0-4fc3-bae9-69d51932f104/05-06%20Fast%20forward%20merge.svg?cdnVersion=617)
+![fast-forward merge](https://www.bogotobogo.com/cplusplus/images/Git/Fast_Forward_Merge/FastForwardMerge.png)
 
 ```powershell
 # make a new directory and initialize the repository

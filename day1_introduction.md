@@ -43,12 +43,12 @@ You will be asked for an optional passphrase. It's permissible to click enter an
 
 The Windows GitHub SSH keys live in the `.ssh` folder under the current user's home directory. The following directory listing under the `.ssh` folder of a user named Cameron shows the two files created by the ssh-keygen tool:
 
-```
-PS C:\Users\Cameron\.ssh> dir
-LastWriteTime      Name
--------------      ----
-1/1/2022           id_rsa
-1/1/2022           id_rsa.pub
+```powershell
+dir # from C:\Users\Sébastien\.ssh> 
+# LastWriteTime      Name
+# -------------      ----
+# 1/1/2022           id_rsa
+# 1/1/2022           id_rsa.pub
 ```
 
 Open the SSH public key `id_rsa.pub` in a text editor such as Notepad++, perform a Select All, and copy the key.
